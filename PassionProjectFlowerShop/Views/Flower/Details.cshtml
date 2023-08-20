@@ -1,4 +1,4 @@
-﻿@model PassionProjectFlowerShop.Models.FlowerDto
+﻿@model PassionProjectFlowerShop.Models.ViewModels.DetailsFlower
 
 
 @{
@@ -7,8 +7,34 @@
 
 <a href="/Flower/List">Back to List</a>
 
-<h2>@Model.FlowerName</h2>
-<div>Color: @Model.FlowerColor</div>
-<div>Price: @Model.FlowerPrice</div>
+<br />
 
+<a href="/Flower/Edit/@Model.SelectedFlower.FlowerId">Update</a>
+<br />
+<a href="/Flower/DeleteConfirm/@Model.SelectedFlower.FlowerId">Delete</a>
+<h2>@Model.SelectedFlower.FlowerName</h2>
+<div>Color: @Model.SelectedFlower.FlowerColor </div>
+<div>Price: @Model.SelectedFlower.FlowerPrice</div>
 
+<div>
+    <h2>Occasion to @Model.SelectedFlower.FlowerName:</h2>
+    @foreach (var Occasion in Model.SpecialOccasions)
+    {
+
+        <a href="/Occasion/Details/@Occasion.OccasionId">@Occasion.OccasionName @Occasion.OccasionDate</a>
+    }
+
+    <div>
+        <h4>Add an Occasion for @Model.SelectedFlower.FlowerName</h4>
+        <form method="POST" action="/Flower/Occasione/@Model.SelectedFlower.FlowerId">
+            <select name="OccasionId">
+                @foreach (var Occasion in Model.SpecialOccasions)
+                {
+                    <option value="@Occasion.OccasionId">@Occasion.OccasionName @Occasion.OccasionDate</option>
+                }
+
+            </select>
+            <input type="submit" value="Associate Occasion" />
+        </form>
+    </div>
+</div>
