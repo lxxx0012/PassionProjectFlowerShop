@@ -1,0 +1,19 @@
+﻿@model IEnumerable<PassionProjectFlowerShop.Models.BouquetDto>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Bouquet List</h2>
+@foreach (var bouquet in Model)
+ {
+    <h2><a href="/Bouquet/Details/@bouquet.BouquetId">@bouquet.BouquetName</a></h2>
+    <div>Price: @bouquet.BouquetPrice</div>
+    <div>Information: @bouquet.BouquetDescription</div>
+
+
+
+
+ }
+
+

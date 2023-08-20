@@ -182,14 +182,121 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BouquetController.cs" />
+    <Compile Include="Controllers\FlowerController.cs" />
+    <Compile Include="Controllers\BouquetDataController.cs" />
+    <Compile Include="Controllers\FlowerDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\OccasionController.cs" />
+    <Compile Include="Controllers\OccasionDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202307302007192_flower.cs" />
+    <Compile Include="Migrations\202307302007192_flower.designer.cs">
+      <DependentUpon>202307302007192_flower.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307302021465_bouquet.cs" />
+    <Compile Include="Migrations\202307302021465_bouquet.designer.cs">
+      <DependentUpon>202307302021465_bouquet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307302022519_occasion.cs" />
+    <Compile Include="Migrations\202307302022519_occasion.designer.cs">
+      <DependentUpon>202307302022519_occasion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307302027012_bouquet1.cs" />
+    <Compile Include="Migrations\202307302027012_bouquet1.designer.cs">
+      <DependentUpon>202307302027012_bouquet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307302027291_occasion1.cs" />
+    <Compile Include="Migrations\202307302027291_occasion1.designer.cs">
+      <DependentUpon>202307302027291_occasion1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307310235143_flower1.cs" />
+    <Compile Include="Migrations\202307310235143_flower1.designer.cs">
+      <DependentUpon>202307310235143_flower1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307310235487_bouquet2.cs" />
+    <Compile Include="Migrations\202307310235487_bouquet2.designer.cs">
+      <DependentUpon>202307310235487_bouquet2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307310236251_occasion2.cs" />
+    <Compile Include="Migrations\202307310236251_occasion2.designer.cs">
+      <DependentUpon>202307310236251_occasion2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202307310328329_flower-bouquet-occasion.cs" />
+    <Compile Include="Migrations\202307310328329_flower-bouquet-occasion.designer.cs">
+      <DependentUpon>202307310328329_flower-bouquet-occasion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190142182_flower2.cs" />
+    <Compile Include="Migrations\202308190142182_flower2.designer.cs">
+      <DependentUpon>202308190142182_flower2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190144291_flower3.cs" />
+    <Compile Include="Migrations\202308190144291_flower3.designer.cs">
+      <DependentUpon>202308190144291_flower3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190153512_flower4.cs" />
+    <Compile Include="Migrations\202308190153512_flower4.designer.cs">
+      <DependentUpon>202308190153512_flower4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190155108_bouquet3.cs" />
+    <Compile Include="Migrations\202308190155108_bouquet3.designer.cs">
+      <DependentUpon>202308190155108_bouquet3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190155428_occasion3.cs" />
+    <Compile Include="Migrations\202308190155428_occasion3.designer.cs">
+      <DependentUpon>202308190155428_occasion3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190213276_flower5.cs" />
+    <Compile Include="Migrations\202308190213276_flower5.designer.cs">
+      <DependentUpon>202308190213276_flower5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190214266_bouquet4.cs" />
+    <Compile Include="Migrations\202308190214266_bouquet4.designer.cs">
+      <DependentUpon>202308190214266_bouquet4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190216027_occassion.cs" />
+    <Compile Include="Migrations\202308190216027_occassion.designer.cs">
+      <DependentUpon>202308190216027_occassion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190219031_flower6.cs" />
+    <Compile Include="Migrations\202308190219031_flower6.designer.cs">
+      <DependentUpon>202308190219031_flower6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190219501_bouquet5.cs" />
+    <Compile Include="Migrations\202308190219501_bouquet5.designer.cs">
+      <DependentUpon>202308190219501_bouquet5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190220318_occasion4.cs" />
+    <Compile Include="Migrations\202308190220318_occasion4.designer.cs">
+      <DependentUpon>202308190220318_occasion4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190229584_flower7.cs" />
+    <Compile Include="Migrations\202308190229584_flower7.designer.cs">
+      <DependentUpon>202308190229584_flower7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190236493_flower8.cs" />
+    <Compile Include="Migrations\202308190236493_flower8.designer.cs">
+      <DependentUpon>202308190236493_flower8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202308190237218_bouquet6.cs" />
+    <Compile Include="Migrations\202308190237218_bouquet6.designer.cs">
+      <DependentUpon>202308190237218_bouquet6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Bouquet.cs" />
+    <Compile Include="Models\Flower.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Occasion.cs" />
+    <Compile Include="Models\ViewModels\DetailsFlower.cs" />
+    <Compile Include="Models\ViewModels\DetailsBouquet.cs" />
+    <Compile Include="Models\ViewModels\DetialsOccasion.cs" />
+    <Compile Include="Models\ViewModels\UpdateFlower.cs" />
+    <Compile Include="Models\ViewModels\UpdateBouquet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -213,12 +320,15 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="jsondata\Bouquet.json" />
+    <None Include="jsondata\flower.json" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="jsondata\Occasion.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -264,9 +374,25 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Flower\List.cshtml" />
+    <Content Include="Views\Flower\Details.cshtml" />
+    <Content Include="Views\Flower\New.cshtml" />
+    <Content Include="Views\Flower\Error_Flower.cshtml" />
+    <Content Include="Views\Bouquet\Details.cshtml" />
+    <Content Include="Views\Bouquet\Error.cshtml" />
+    <Content Include="Views\Bouquet\List.cshtml" />
+    <Content Include="Views\Bouquet\New.cshtml" />
+    <Content Include="Views\Bouquet\Edit.cshtml" />
+    <Content Include="Views\Flower\Edit.cshtml" />
+    <Content Include="Views\Occasion\Details.cshtml" />
+    <Content Include="Views\Occasion\Edit.cshtml" />
+    <Content Include="Views\Occasion\Error.cshtml" />
+    <Content Include="Views\Occasion\List.cshtml" />
+    <Content Include="Views\Occasion\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\OccasionData\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -294,6 +420,77 @@
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202307302007192_flower.resx">
+      <DependentUpon>202307302007192_flower.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307302021465_bouquet.resx">
+      <DependentUpon>202307302021465_bouquet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307302022519_occasion.resx">
+      <DependentUpon>202307302022519_occasion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307302027012_bouquet1.resx">
+      <DependentUpon>202307302027012_bouquet1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307302027291_occasion1.resx">
+      <DependentUpon>202307302027291_occasion1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307310235143_flower1.resx">
+      <DependentUpon>202307310235143_flower1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307310235487_bouquet2.resx">
+      <DependentUpon>202307310235487_bouquet2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307310236251_occasion2.resx">
+      <DependentUpon>202307310236251_occasion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202307310328329_flower-bouquet-occasion.resx">
+      <DependentUpon>202307310328329_flower-bouquet-occasion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190142182_flower2.resx">
+      <DependentUpon>202308190142182_flower2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190144291_flower3.resx">
+      <DependentUpon>202308190144291_flower3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190153512_flower4.resx">
+      <DependentUpon>202308190153512_flower4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190155108_bouquet3.resx">
+      <DependentUpon>202308190155108_bouquet3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190155428_occasion3.resx">
+      <DependentUpon>202308190155428_occasion3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190213276_flower5.resx">
+      <DependentUpon>202308190213276_flower5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190214266_bouquet4.resx">
+      <DependentUpon>202308190214266_bouquet4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190216027_occassion.resx">
+      <DependentUpon>202308190216027_occassion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190219031_flower6.resx">
+      <DependentUpon>202308190219031_flower6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190219501_bouquet5.resx">
+      <DependentUpon>202308190219501_bouquet5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190220318_occasion4.resx">
+      <DependentUpon>202308190220318_occasion4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190229584_flower7.resx">
+      <DependentUpon>202308190229584_flower7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190236493_flower8.resx">
+      <DependentUpon>202308190236493_flower8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308190237218_bouquet6.resx">
+      <DependentUpon>202308190237218_bouquet6.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

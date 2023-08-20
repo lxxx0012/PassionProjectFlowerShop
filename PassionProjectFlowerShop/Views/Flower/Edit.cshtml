@@ -1,0 +1,35 @@
+﻿@model PassionProjectFlowerShop.Models.ViewModels.UpdateFlower
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Update Flower</h2>
+<form action="/Flower/Update/@Model.SelectedFlower.FlowerId" method="POST" >
+    <div style="display:none;">
+        @* Pass through Bouquet Id *@
+        <input type="text" name="FlowerId" value="@Model.SelectedFlower.FlowerId" />
+    </div>
+    <div>
+        <label>Flower Name: </label> <input type="text" name="FlowerName" value="@Model.SelectedFlower.FlowerName" />
+    </div>
+    <div>
+        <label>Price: </label> <input type="number" name="FlowerPrice" value="@Model.SelectedFlower.FlowerPrice" step="0.01" min="0.00" max="1000.00" />
+    </div>
+    <div>
+        <label>Color: </label> <input type="text" name="FlowerColor" value="@Model.SelectedFlower.FlowerColor" />
+    </div>
+    <div>
+        <label>Bouquet ID: </label>
+        <select name="BouquetId">
+            @foreach (var bouquet in Model.BouquetOptions)
+            {
+                <option value="@bouquet.BouquetId">@bouquet.BouquetName</option>
+            }
+        </select>
+    </div>
+    <div>
+        <input type="submit" value="Update Bouquet" />
+    </div>
+</form>
+

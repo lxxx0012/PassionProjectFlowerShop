@@ -1,0 +1,31 @@
+﻿@model IEnumerable<PassionProjectFlowerShop.Models.FlowerDto>
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Bouquet</h2>
+<form action="/Bouquet/Create" method="post">
+    <div>
+        <label>Bouquet Name: </label> <input type="text" name="BouquetName" />
+    </div>
+    <div>
+        <label>Price: </label> <input type="number" name="BouquetPrice" step="0.01" min="0.00" max="1000.00" />
+    </div>
+    <div>
+        <label>Inforamtion: </label> <textarea name="BouquetDescpt" row="5" cols="50" />
+    </div>
+    <div>
+    <label>Flower Id: </label>
+    <select name="FlowerId">
+        @foreach (var flower in Model)
+        {
+            <option value="@flower.FlowerId">@flower.FlowerName</option>
+        }
+    </select>
+    </div>
+    <div>
+        <input type="submit" value="Add Bouquet" />
+    </div>
+</form>
+
